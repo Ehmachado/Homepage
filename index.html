@@ -46,14 +46,6 @@
             height: auto;
         }
 
-        .header h1 {
-            font-size: 2.2em;
-            font-weight: 700;
-            margin-bottom: 10px;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-        }
-
         .header p {
             font-size: 1.1em;
             opacity: 0.95;
@@ -251,10 +243,6 @@
         }
 
         @media (max-width: 600px) {
-            .header h1 {
-                font-size: 1.6em;
-            }
-
             .buttons-grid {
                 grid-template-columns: 1fr;
             }
@@ -265,9 +253,9 @@
     <div class="container">
         <div class="header">
             <div class="logo-container">
-                <img src="" alt="Regional Barreiras" id="logoImg" style="display: none;">
+                <img src="logo.png" alt="Regional Barreiras">
             </div>
-            <p>Super Barreiras BB - Portal de Acesso</p>
+            <p>Super Barreiras - Portal de Acesso</p>
         </div>
 
         <div class="content">
@@ -327,39 +315,6 @@
     </div>
 
     <script>
-        // Tentar carregar a imagem com diferentes nomes possíveis
-        const loadImage = async () => {
-            const possibleNames = [
-                'image.png',
-                'image.jpg',
-                'image.jpeg',
-                'logo.png',
-                'logo.jpg',
-                'barreiras.png',
-                'shield.png',
-                'escudo.png'
-            ];
-
-            for (const filename of possibleNames) {
-                try {
-                    const imageData = await window.fs.readFile(filename);
-                    const base64 = btoa(String.fromCharCode(...new Uint8Array(imageData)));
-                    const ext = filename.split('.').pop().toLowerCase();
-                    const mimeType = ext === 'png' ? 'image/png' : 'image/jpeg';
-                    
-                    const logoImg = document.getElementById('logoImg');
-                    logoImg.src = `data:${mimeType};base64,${base64}`;
-                    logoImg.style.display = 'block';
-                    console.log('Imagem carregada:', filename);
-                    break;
-                } catch (error) {
-                    console.log(`Tentando próximo arquivo... (${filename} não encontrado)`);
-                }
-            }
-        };
-
-        loadImage();
-
         let targetUrl = '';
         const correctPassword = '88018485';
 
