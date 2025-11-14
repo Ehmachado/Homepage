@@ -1,10 +1,11 @@
 <!DOCTYPE html>
+
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Super Barreiras - Portal de Acesso</title>
-    <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Super Barreiras - Portal de Acesso</title>
+<style>
         * {
             margin: 0;
             padding: 0;
@@ -244,76 +245,76 @@
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <div class="logo-container">
-                <img src="logo.png" alt="Regional Barreiras">
-            </div>
-            <p>Super Barreiras BB - Portal de Acesso</p>
-        </div>
-
-        <div class="content">
-            <div class="restricted-section">
-                <div class="restricted-header">
-                    <h2>Acesso Restrito</h2>
-                    <span class="lock-icon">🔒</span>
-                </div>
-                
-                <div id="passwordArea">
-                    <div class="password-form">
-                        <input type="password" id="password" class="password-input" placeholder="Digite a senha para acessar">
-                        <button class="unlock-btn" onclick="unlockLinks()">Desbloquear</button>
-                    </div>
-                    <div class="error-message" id="error">Senha incorreta. Tente novamente.</div>
-                </div>
-
-                <div class="success-message" id="successMessage">
-                    <span>✓</span>
-                    <span>Acesso liberado! Selecione um dos links abaixo:</span>
-                </div>
-
-                <div class="restricted-links" id="restrictedLinks">
-                    <div class="buttons-grid">
-                        <a href="https://disparador.superbarreirasbb.com.br" class="btn">
+<div class="container">
+<div class="header">
+<div class="logo-container">
+<img alt="Regional Barreiras" src="logo.png"/>
+</div>
+<p>Super Barreiras BB - Portal de Acesso</p>
+</div>
+<div class="content">
+<div class="restricted-section">
+<div class="restricted-header">
+<h2>Acesso Restrito</h2>
+<span class="lock-icon">🔒</span>
+</div>
+<div id="passwordArea">
+<div class="password-form">
+<input class="password-input" id="password" placeholder="Digite a senha para acessar" type="password"/>
+<button class="unlock-btn" onclick="unlockLinks()">Desbloquear</button>
+</div>
+<div class="error-message" id="error">Senha incorreta. Tente novamente.</div>
+</div>
+<div class="success-message" id="successMessage">
+<span>✓</span>
+<span>Acesso liberado! Selecione um dos links abaixo:</span>
+</div>
+<div class="restricted-links" id="restrictedLinks">
+<div class="buttons-grid">
+<a class="btn" href="https://disparador.superbarreirasbb.com.br">
                             Disparador
                         </a>
-                        <a href="https://contatos.superbarreirasbb.com.br" class="btn">
+<a class="btn" href="https://contatos.superbarreirasbb.com.br">
                             Ranking de Contatos
                         </a>
-                        <a href="https://bateria.superbarreirasbb.com.br" class="btn">
+<a class="btn" href="https://bateria.superbarreirasbb.com.br">
                             Bateria
                         </a>
-                        <a href="https://aqdesafios.superbarreirasbb.com.br" class="btn">
-                            Arquivo de Mobilizações
-                        </a>
-                        <a href="https://desafios.superbarreirasbb.com.br" class="btn">
+
+<a class="btn" href="https://desafios.superbarreirasbb.com.br">
                             Gestão de Mobilizações
                         </a>
-                        <a href="https://cards.superbarreirasbb.com.br" class="btn">
+<a class="btn" href="https://cards.superbarreirasbb.com.br">
                             Galeria dos Campeões
                         </a>
-                        <a href="https://mp.superbarreirasbb.com.br" class="btn">
+<a class="btn" href="https://mp.superbarreirasbb.com.br">
                             Contatos MP1314
                         </a>
-                    </div>
-                </div>
-            </div>
 
-            <div class="section">
-                <h2>Acesso Público</h2>
-                <div class="buttons-grid">
-                    <a href="https://opagro.superbarreirasbb.com.br" class="btn public">
+                        <a class="btn" href="https://ap02.superbarreirasbb.com.br">Ranking Mobilizador Especial</a>
+
+                        <a class="btn" href="https://ap03.superbarreirasbb.com.br">Filtro Grao</a>
+
+                        <a class="btn" href="https://localizaai.app.br">Gerador de Certificados</a>
+
+                        <a class="btn" href="https://ap04.superbarreirasbb.com.br">Consórciometro</a>
+</div>
+</div>
+</div>
+<div class="section">
+<h2>Acesso Público</h2>
+<div class="buttons-grid">
+<a class="btn public" href="https://opagro.superbarreirasbb.com.br">
                         Análise de Operações Agro
                     </a>
-                    <a href="https://oppj.superbarreirasbb.com.br" class="btn public">
+<a class="btn public" href="https://oppj.superbarreirasbb.com.br">
                         Análise de Operações PJ
                     </a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <script>
+</div>
+</div>
+</div>
+</div>
+<script>
         const correctPassword = '88018485';
         let isUnlocked = false;
 
